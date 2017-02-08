@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  db2:
+    build: ibm-db2/
+    volumes:
+      - ./ibm-db2/config:/home/db2inst1/config
+    entrypoint: /home/db2inst1/config/entrypoint.sh
+    ports:
+      - "50001:50000"
+    environment:
+      DB2INST1_PASSWORD: cyber123
+      LICENSE: accept
+    command: db2sampl
