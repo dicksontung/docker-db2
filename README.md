@@ -4,7 +4,7 @@ A DB2 docker that automatically creates a sample db.
 ## Getting started
 You will need to have `docker-compose` installed.
 
- To start the DB@2 docker:
+ To start the DB2 docker:
  ```bash
  $ docker-compose up
  ```
