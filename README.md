@@ -10,8 +10,8 @@ You will need to have `docker-compose` installed.
  ```
  Wait for the image to be downloaded, built and started.
  
- ## Using the docker image
- You can use your database viewer with the properties below to connect to the DB and check:
+## Using the docker image
+You can use your database viewer with the properties below to connect to the DB and check:
  ```xml
  <url>jdbc:db2://localhost:50000/sample</url>
  <user>db2inst1</user>
@@ -34,5 +34,5 @@ You will need to have `docker-compose` installed.
  $ db2 "select * from access_event"
  ```
  
- ## Initialize docker with scripts
- Put your create table script within `/ibm-db2/db2.sql` and the script will be run after database initialization
+## Initialize docker with scripts
+Put your create table script within `/ibm-db2/db2.sql` and the script will be run after database initialization
