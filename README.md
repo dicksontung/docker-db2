@@ -1,7 +1,7 @@
-# docker-db2
+# docker-db2 #
 A DB2 docker that automatically creates a sample db.
 
-## Getting started
+## Getting started ##
 You will need to have `docker-compose` installed.
 
  To start the DB2 docker:
@@ -10,7 +10,7 @@ You will need to have `docker-compose` installed.
  ```
  Wait for the image to be downloaded, built and started.
  
-## Using the docker image
+## Using the docker image ##
 You can use your database viewer with the properties below to connect to the DB and check:
  ```xml
  <url>jdbc:db2://localhost:50000/sample</url>
@@ -34,5 +34,5 @@ You can use your database viewer with the properties below to connect to the DB 
  $ db2 "select * from access_event"
  ```
  
-## Initialize docker with scripts
+## Initialize docker with scripts ##
 Put your create table script within `/ibm-db2/db2.sql` and the script will be run after database initialization
